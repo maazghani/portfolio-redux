@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "build:worker": "opennextjs-cloudflare build",
+    "bundle:sites": "npm run build:worker && wrangler deploy --dry-run --outdir .sites-bundle",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "dependencies": {

@@ -17,4 +17,8 @@ npm run lint
 npm run typecheck
 npm run build
 npm run build:worker
+npm run bundle:sites
 ```
+
+`bundle:sites` performs Wrangler's final compatibility bundling pass and writes
+the production-ready worker to `.sites-bundle/worker.js`.
