@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# OpenNext / Cloudflare
+/.open-next
+/.wrangler
+
+# local environment
+.env*
+!.dev.vars
+
+# logs and system files
+*.log
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
