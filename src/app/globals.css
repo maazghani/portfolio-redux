@@ -805,6 +805,8 @@ a {
 }
 
 .timeline__date {
+  grid-column: 1;
+  grid-row: 1;
   margin: 17px 0 0;
   color: var(--yellow);
   font-family: var(--font-mono);
@@ -814,6 +816,8 @@ a {
 
 .timeline__marker {
   position: relative;
+  grid-column: 2;
+  grid-row: 1;
   display: flex;
   justify-content: center;
   padding-top: 21px;
@@ -835,6 +839,8 @@ a {
 }
 
 .timeline__entry {
+  grid-column: 3;
+  grid-row: 1;
   padding: 24px 26px;
   background: rgba(48, 52, 70, 0.64);
   border: 1px solid var(--surface-0);
@@ -1110,35 +1116,11 @@ a {
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 64px;
-  align-items: start;
   border-bottom: 1px solid var(--surface-0);
 }
 
-.contact__prompt {
-  padding: 20px;
-  background: rgba(35, 38, 52, 0.65);
-  border: 1px solid var(--surface-0);
-  border-radius: 9px;
-  font-family: var(--font-mono);
-  font-size: 10px;
-}
-
-.contact__prompt .section-command {
-  padding-bottom: 14px;
-  margin-bottom: 14px;
-  border-bottom: 1px solid var(--surface-0);
-}
-
-.contact__line {
-  margin: 6px 0 0;
-  color: var(--subtext-0);
-}
-
-.contact__line span {
-  color: var(--green);
+.contact__content {
+  max-width: 920px;
 }
 
 .contact__kicker {
@@ -1170,11 +1152,11 @@ a {
 }
 
 .contact__socials {
-  grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 28px;
+  margin-top: 64px;
   padding-top: 30px;
   border-top: 1px solid var(--surface-0);
 }
@@ -1255,18 +1237,9 @@ a {
     max-width: 62ch;
   }
 
-  .contact {
-    grid-template-columns: 1fr;
-    gap: 38px;
-  }
-
-  .contact__prompt {
-    width: min(100%, 540px);
-  }
-
   .contact__socials {
-    grid-column: auto;
     justify-content: flex-start;
+    margin-top: 52px;
   }
 }
 
@@ -1351,9 +1324,18 @@ a {
     flex-direction: column;
   }
 
+  .contact__actions {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
   .button {
     width: 100%;
     min-height: 48px;
+  }
+
+  .contact__actions .button {
+    min-height: 44px;
   }
 
   .profile-stats {
@@ -1488,7 +1470,14 @@ a {
   .contact__socials {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    column-gap: 24px;
+    row-gap: 0;
+    margin-top: 44px;
+    padding-top: 22px;
+  }
+
+  .contact__socials a {
+    min-height: 44px;
   }
 
   .site-footer {

@@ -41,7 +41,7 @@ const experience = [
 
 const projects = [
   {
-    name: "KSAILNet",
+    name: "ksailnet",
     path: "~/src/ksailnet",
     href: "https://github.com/maazghani/ksailnet",
     description:
@@ -176,8 +176,8 @@ export default function Home() {
               </p>
 
               <div className="hero__actions">
-                <a className="button button--primary" href="#work">
-                  <span aria-hidden="true">./</span>view-work
+                <a className="button button--primary" href="#experience">
+                  <span aria-hidden="true">./</span>view-career
                 </a>
                 <a
                   className="button button--secondary"
@@ -211,7 +211,7 @@ export default function Home() {
                 <p className="section-command">
                   $ journalctl -u career --reverse
                 </p>
-                <h2 id="experience-title">System logs</h2>
+                <h2 id="experience-title">Career History</h2>
               </div>
               <p>
                 Building dependable systems across retail, SaaS, and cloud
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="section-heading">
               <div>
                 <p className="section-command">$ ls -lah ~/projects</p>
-                <h2 id="projects-title">Open source</h2>
+                <h2 id="projects-title">Projects</h2>
               </div>
               <a
                 className="text-link"
@@ -365,16 +365,6 @@ export default function Home() {
             id="contact"
             aria-labelledby="contact-title"
           >
-            <div className="contact__prompt">
-              <p className="section-command">$ ./connect.sh</p>
-              <p className="contact__line">
-                <span>[ OK ]</span> connection channels initialized
-              </p>
-              <p className="contact__line">
-                <span>[ OK ]</span> response path: email
-              </p>
-            </div>
-
             <div className="contact__content">
               <p className="contact__kicker">OPEN TO CONVERSATION</p>
               <h2 id="contact-title">
