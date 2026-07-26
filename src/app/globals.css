@@ -307,7 +307,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(330px, 0.84fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 64px;
   padding-top: 92px;
   border-bottom: 1px solid var(--surface-0);
@@ -315,6 +315,7 @@ a {
 
 .hero__copy {
   align-self: center;
+  max-width: 900px;
 }
 
 .eyebrow,
@@ -996,12 +997,22 @@ a {
   padding: 42px;
 }
 
-.project-card__index {
-  display: block;
+.project-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 22px;
+}
+
+.project-card__index,
+.project-card__meta time {
   color: var(--surface-2);
   font-family: var(--font-mono);
   font-size: 12px;
+}
+
+.project-card__meta time {
+  color: var(--green);
 }
 
 .project-card h3 {

@@ -41,14 +41,15 @@ const experience = [
 
 const projects = [
   {
-    name: "ChatWithKubernetes",
-    path: "~/src/chat-with-kubernetes",
-    href: "https://github.com/maazghani/ChatWithKubernetes",
+    name: "KSAILNet",
+    path: "~/src/ksailnet",
+    href: "https://github.com/maazghani/ksailnet",
     description:
-      "A CLI for natural-language interaction with Kubernetes clusters, using LLMs to translate intent into kubectl commands.",
-    stack: ["Shell", "AI", "Kubernetes"],
+      "Inner-loop cloud-native development with a K3s dev container, automated deployments, and a Tailscale tailnet.",
+    stack: ["K3s", "Dev Containers", "Tailscale"],
     className: "project-card--featured",
     index: "01",
+    year: "2023",
   },
   {
     name: "PDFQuery",
@@ -59,6 +60,7 @@ const projects = [
     stack: ["Python", "RAG"],
     className: "",
     index: "02",
+    year: "2025",
   },
   {
     name: "Thinscale",
@@ -69,6 +71,7 @@ const projects = [
     stack: ["IoT", "Tailscale", "K3s"],
     className: "",
     index: "03",
+    year: "2017",
   },
 ];
 
@@ -135,11 +138,11 @@ export default function Home() {
           <a href="#experience">
             <span>02</span> logs
           </a>
-          <a href="#work">
-            <span>03</span> work
-          </a>
           <a href="#thoughts">
-            <span>04</span> thoughts
+            <span>03</span> thoughts
+          </a>
+          <a href="#work">
+            <span>04</span> work
           </a>
           <a href="#contact">
             <span>05</span> connect
@@ -159,8 +162,8 @@ export default function Home() {
               </h1>
               <p className="hero__role">
                 Staff Kubernetes Engineer
-                <span aria-hidden="true"> / </span>
-                <span>Site Reliability Engineer</span>
+                <span aria-hidden="true"> @ </span>
+                <span>Lululemon</span>
               </p>
               <p className="hero__intro">
                 Security-first engineer who enjoys gluing things together.
@@ -192,77 +195,6 @@ export default function Home() {
                 )}
               </ul>
             </div>
-
-            <aside className="profile-panel" aria-label="Profile summary">
-              <div className="file-bar">
-                <span>profile.toml</span>
-                <span>utf-8</span>
-              </div>
-              <div className="profile-panel__code">
-                <p>
-                  <span className="code-key">name</span>
-                  <span className="code-operator"> = </span>
-                  <span className="code-string">&quot;Maaz Ghani&quot;</span>
-                </p>
-                <p>
-                  <span className="code-key">location</span>
-                  <span className="code-operator"> = </span>
-                  <span className="code-string">&quot;Seattle, WA&quot;</span>
-                </p>
-                <p>
-                  <span className="code-key">current</span>
-                  <span className="code-operator"> = </span>
-                  <span className="code-string">&quot;Lululemon&quot;</span>
-                </p>
-                <p>
-                  <span className="code-key">focus</span>
-                  <span className="code-operator"> = [</span>
-                </p>
-                <p className="code-indent">
-                  <span className="code-string">&quot;security&quot;</span>,
-                </p>
-                <p className="code-indent">
-                  <span className="code-string">&quot;reliability&quot;</span>,
-                </p>
-                <p className="code-indent">
-                  <span className="code-string">&quot;platforms&quot;</span>
-                </p>
-                <p>
-                  <span className="code-operator">]</span>
-                </p>
-              </div>
-
-              <div className="cluster-map" aria-hidden="true">
-                <div className="cluster-map__header">
-                  <span>cluster/topology</span>
-                  <span className="healthy">● healthy</span>
-                </div>
-                <div className="cluster-map__visual">
-                  <span className="cluster-node cluster-node--control">
-                    <i /> control
-                  </span>
-                  <span className="cluster-line cluster-line--left" />
-                  <span className="cluster-line cluster-line--right" />
-                  <span className="cluster-node cluster-node--left">
-                    <i /> west
-                  </span>
-                  <span className="cluster-node cluster-node--right">
-                    <i /> east
-                  </span>
-                </div>
-              </div>
-
-              <dl className="profile-stats">
-                <div>
-                  <dt>nodes operated</dt>
-                  <dd>1,200+</dd>
-                </div>
-                <div>
-                  <dt>compliance</dt>
-                  <dd>FedRAMP High</dd>
-                </div>
-              </dl>
-            </aside>
 
             <div className="hero__console">
               <TerminalConsole />
@@ -324,56 +256,6 @@ export default function Home() {
           </section>
 
           <section
-            className="projects section-pad"
-            id="work"
-            aria-labelledby="projects-title"
-          >
-            <div className="section-heading">
-              <div>
-                <p className="section-command">$ ls -lah ~/projects</p>
-                <h2 id="projects-title">Open source</h2>
-              </div>
-              <a
-                className="text-link"
-                href="https://github.com/maazghani"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                view all repos <span aria-hidden="true">↗</span>
-                <ExternalLabel />
-              </a>
-            </div>
-
-            <div className="project-grid">
-              {projects.map((project) => (
-                <a
-                  className={`project-card ${project.className}`}
-                  key={project.name}
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="project-card__top">
-                    <span>{project.path}</span>
-                    <span aria-hidden="true">↗</span>
-                  </div>
-                  <div className="project-card__content">
-                    <span className="project-card__index">{project.index}</span>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                  <ul className="tag-list" aria-label={`${project.name} stack`}>
-                    {project.stack.map((tag) => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
-                  <ExternalLabel />
-                </a>
-              ))}
-            </div>
-          </section>
-
-          <section
             className="writing section-pad"
             id="thoughts"
             aria-labelledby="writing-title"
@@ -419,6 +301,59 @@ export default function Home() {
                   <span className="article-row__arrow" aria-hidden="true">
                     ↗
                   </span>
+                  <ExternalLabel />
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <section
+            className="projects section-pad"
+            id="work"
+            aria-labelledby="projects-title"
+          >
+            <div className="section-heading">
+              <div>
+                <p className="section-command">$ ls -lah ~/projects</p>
+                <h2 id="projects-title">Open source</h2>
+              </div>
+              <a
+                className="text-link"
+                href="https://github.com/maazghani"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view all repos <span aria-hidden="true">↗</span>
+                <ExternalLabel />
+              </a>
+            </div>
+
+            <div className="project-grid">
+              {projects.map((project) => (
+                <a
+                  className={`project-card ${project.className}`}
+                  key={project.name}
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-card__top">
+                    <span>{project.path}</span>
+                    <span aria-hidden="true">↗</span>
+                  </div>
+                  <div className="project-card__content">
+                    <div className="project-card__meta">
+                      <span className="project-card__index">{project.index}</span>
+                      <time dateTime={project.year}>{project.year}</time>
+                    </div>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                  </div>
+                  <ul className="tag-list" aria-label={`${project.name} stack`}>
+                    {project.stack.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
                   <ExternalLabel />
                 </a>
               ))}
