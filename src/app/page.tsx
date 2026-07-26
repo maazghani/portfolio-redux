@@ -427,10 +427,6 @@ export default function Home() {
 
         <footer className="site-footer">
           <p>© 2026 Maaz Ghani</p>
-          <p>catppuccin/frappé</p>
-          <p className="site-footer__status">
-            <span aria-hidden="true" /> SYSTEM_STATUS: ONLINE
-          </p>
         </footer>
       </div>
     </div>

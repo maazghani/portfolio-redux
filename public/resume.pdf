@@ -1,0 +1,110 @@
+
+
+Maaz Ghani
+maazghani@gmail.com  •  2062514645  •  Seattle, Washington, United States  •   linkedin.com/in/maazg
+SUMMARY
+Security-first Site Reliability Engineer that likes to glue things together. Constantly striving to build secure, resilient and
+maintainable solutions in a landscape where the only constant is change; change in the form of abstraction layers, with the the
+core tenet of Zero Trust, in networks, roles, and all things privilege.
+EXPERIENCE
+lululemon,  Senior Kubernetes Engineer
+Feb 2024 - Present
+I help support the Enterprise Kubernetes Platform at Lululemon which houses all the core Enterprise applications from the
+backend warehouse systems to the APIs and event-based microservices that operate the sales funnel, in stores and online.
+ 
+- Manage multiple EKS clusters in multiple regions and environments
+- Use terraform to create all AWS Infrastructure
+- Leverage Infrastructure as Code and Gitlab CI/CD for automating all cluster and ancillary operations
+- Use ArgoCD to manage platform tooling that runs on said Enterprise Kubernetes Clusters
+- Pilot and drive Multi-Primary Istio Service Mesh initiative on Kubernetes for Enterprise
+- Work closely with partnering teams to develop scalable best practices for the Enterprise
+- Perform critical troubleshooting efforts in high-pressure environments leveraging Observability tools, knowledge of linux systems
+and cloud-native systems both, and driving mitigations and preventative solutions to support critical Sale events for Lululemon
+Retail
+- Provide support to unblock team members and collaborate closely to share knowledge across team and build strong and
+scalable patterns to elevate the team as a whole
+- Streamline existing team processes and workflows
+- Automate PKI Infrastructure for the Enterprise Kubernetes platform resulting a fully-automated self-renewing certificate
+management solution
+NetApp,  Site Reliability Engineer
+May 2021 - Oct 2023
+I support a real-time event-based metrics/logs SaaS for Fortune 100 enterprise customers of NetApp's popular storage solutions
+as well as their hybrid cloud workloads
+with a lean team operate over 1200 (EKS) kubernetes nodes across many AWS regions in a BC/DR mindset with SLO-driven
+uptime requirements seemlessly with a microservice workload of 120 java services and jobs, as well as the actual infrastrucure
+consisting of tens of clickhouse clusters, 300+ elasicsearch clusters, and the 200+ kafka and zookeeper clusters supporting their
+in-cluster state.
+leveraged statefulsets, AWS-managed and custom-built admissioncontrollers, operators, networkpolicies, deployments, services,
+each with their own customresourcedefinitions to build intelligent self-healing and autoscaling systems which brought both cost
+efficiency, resiliency, at no cost to our zero-trust architecture and strict security controls
+led the operational requirements, and adherence to compliance controls required to achieve FedRAMP High compliance for
+the SaaS I supported, which allowed me to really exercise my passion in security posture as well as highly reliable distributed
+systems
+I take a lot of pride in the supporting my teammates growth to ensure I am allowing myself to be supported and taught lessons
+that can only be learned through pairing, collaboration, and holding myself and my teammates accountable for the product we put
+out on a daily basis
+created and maintained an "sre-tools" container ecosystem of purpose-built docker images for either development (golang
++terraform+vim+git), operational (kubectl+eksctl+awscli) and troubleshooting (netcat,tcpdump,lsof, sysadmin's handy set of tools)
+that ran either on workstation or on a kubernetes cluster to perform my team and I's daily SRE activities
+Nordstrom,  Senior Site Reliability Engineer
+Mar 2018 - May 2021
+Site Reliability Engineer supporting Nordstrom.com (mobile and web), internal platform (shared CICD tooling, PKI, DNS), and
+large focus on supporting Nordstrom’s shared Kubernetes platform’s cluster operators.
+Significant amount of time performing Ops Readiness assesments and consultations on Nordstrom Design Reviews in
+accordance with Nordstrom’s Engineering standards.This involved working with teams at their earliest stages, often 10-12 teams
+at a time, in order to prepare them for production readiness from a scalability and resiliency perspective, with a focus on Security.
+As well as the rigor and preparedness needed for supporting such systems in production.
+Maaz Ghani - page 1 of 2
+Staff Kubernetes Engineer
+
+Embedded with different teams that were in periods of instability and helped quickly identify at-risk areas with a high-value
+quick improvement as well as longer-term fixes that required rearchitecture and/or org going through the aforementioned
+Design Review process. Helped developed strong observability practices using industry monitoring tools, drove the creation and
+alignment of CI/CD automation using python/bash scripting.
+Provided guidance to a couple of core programs and initiatives such as building the Business Continuity/Disaster Recovery,
+the compute design for both our on-premise (VMWare) and cloud systems (AWS, Azure) in a uniform fashion referred to as our
+Hybrid Compute model, which finally fed into our Edge Compute designs, which lead me to my next position at Nordstrom, the
+Stores.
+Operated on legacy systems such as IBM Message Queues, and Oracle Databases and outdated RHEL machines in a complex
+interdependent VMWare ecosystem Worked through modernizing isolated components to modern day systems such as Kafka
+Queues and Kubernetes jobs, with zero downtime, and limited impact to customers.
+Rearchitected DNS in this complex environment to improve security, visibility, and monitoring of a core system in a distributed
+and scaled store ecosystem.
+Nordstrom,  Engineer 3
+Sep 2016 - Mar 2018
+DevOps Engineer supporting Nordstrom.com, Mobile Apps for Nordstrom.com
+Nordstrom,  Engineer 2
+Sep 2015 - Sep 2016
+DevOps Engineer for Customer Mobile Applications at Nordstrom.
+Ottemo,  Lead DevOps Engineer
+May 2013 - Aug 2015
+Ottemo is an easily scalable, cloud based and Hosted (SaaS) eCommerce platform built on cutting-edge technology. Online
+Stores can be set up in minutes by anyone using our cost effective platform. Our state-of-the-art solutions allow you to effortlessly
+control the functionality, look and feel of your online store.
+University of Washington,  Unix Systems Administrator
+Mar 2009 - Jun 2011
+Supported research computing on 100+ Linux (RHEL4), Solaris (9/10), and Windows XP workstations and servers
+Maintained reliable backups
+Provided support for 50+ researchers
+Documented, updated, and create new processes for daily administrative tasks in a specialized AFS-based environment
+Developed Perl and Shell scripts to provide tools for administrators and users to perform environment-specific tasks
+Services maintained include: Matlab installation/licensing, RT/RTFM, Nagios, AFS, Bacula, ZFS, NFS, and SMB/CIFS
+University of Washington,  Student Customer Services
+Aug 2007 - Nov 2007
+I worked as part of the small student staff that helped manage network related problems for students and staff. Common tasks
+ranged from basic password resets for students, and troubleshooting IMAP-Mail related problems for UW faculty. This job
+required me to learn new skills fast, and process lots of information and apply it simultaneously.
+EDUCATION
+University of Washington
+Bachelor of Arts (B.A.)  •  International Studies - Comparative Religion   •  2007 - 2012
+My interest in different religions rooted from my yearning for understanding the beliefs (motives and ideals) of the diverse
+globalized world we live in. With this understanding I hope to be able to be a great communicator since I have no barriers in who
+I can work with. Though my focus was in my academics, a lot of my time was dedicated to my job which required much more
+than the maximum 19.5 hours a student is allowed to work. But this job was a special opportunity given to me and I had to take
+advantage of it since computer science is not only my hobby but a great passion of mine.
+With the diverse experience and knowledge I learned from the University of Washington both in my courses and my job, I hope to
+be an effective Intellectual Property lawyer that specializes in computer science and technology related fields.
+SKILLS
+FedRAMP   •   Terraform   •   System Performance   •   Operational Efficiency   •   Communication   •   Kubernetes   •   Continuous
+Integration and Continuous Delivery (CI/CD)   •   Amazon Web Services (AWS)   •   Cloud Computing   •   DNS
+Maaz Ghani - page 2 of 2
