@@ -73,9 +73,28 @@ const projects = [
     index: "03",
     year: "2017",
   },
+  {
+    name: "git-to.dev",
+    path: "~/src/git-to.dev",
+    href: "https://git-to.dev",
+    description:
+      "Instantly turn any GitHub repository into a browsable, shareable developer site — no config needed.",
+    stack: ["GitHub", "Developer Tools", "Open Source"],
+    className: "",
+    index: "04",
+    year: "2026",
+  },
 ];
 
 const articles = [
+  {
+    date: "2026.08.01",
+    title: "git-to.dev: Turn any GitHub Repo into a Developer Site",
+    description:
+      "How I built git-to.dev — a tool that instantly transforms any public GitHub repository into a browsable, shareable dev site with zero config.",
+    href: "https://blog.maaz.sh/blog/04-git-to-dev",
+    type: "5 min read",
+  },
   {
     date: "2025.07.27",
     title: "Interacting with Kubernetes Clusters from Copilot using an MCP Server",
