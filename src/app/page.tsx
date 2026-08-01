@@ -96,6 +96,13 @@ const articles = [
     type: "3 min read",
   },
   {
+    date: "2025.09.28",
+    title: "Setting Up a Tailscale Exit Node for Apple TV",
+    description: "Route an Apple TV through a tiny VPS with Tailscale.",
+    href: "https://blog.maaz.sh/blog/05-apple-tv-exit-node",
+    type: "8 min read",
+  },
+  {
     date: "2025.07.27",
     title: "Interacting with Kubernetes Clusters from Copilot using an MCP Server",
     description:
