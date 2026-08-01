@@ -41,26 +41,26 @@ const experience = [
 
 const projects = [
   {
-    name: "ksailnet",
-    path: "~/src/ksailnet",
-    href: "https://github.com/maazghani/ksailnet",
-    description:
-      "Inner-loop cloud-native development with a K3s dev container, automated deployments, and a Tailscale tailnet.",
-    stack: ["K3s", "Dev Containers", "Tailscale"],
-    className: "project-card--featured",
-    index: "01",
-    year: "2023",
-  },
-  {
     name: "git-to.dev",
     path: "~/src/git-to.dev",
     href: "https://git-to.dev",
     description:
       "Fuzzy URL shortener for GitHub repos. Type git-to.dev/oai/cx and it resolves to github.com/openai/codex — no URL shortener needed.",
     stack: ["Next.js", "GitHub API", "Fuzzy Search"],
+    className: "project-card--featured",
+    index: "01",
+    year: "2026",
+  },
+  {
+    name: "ksailnet",
+    path: "~/src/ksailnet",
+    href: "https://github.com/maazghani/ksailnet",
+    description:
+      "Inner-loop cloud-native development with a K3s dev container, automated deployments, and a Tailscale tailnet.",
+    stack: ["K3s", "Dev Containers", "Tailscale"],
     className: "",
     index: "02",
-    year: "2026",
+    year: "2023",
   },
   {
     name: "Thinscale",
