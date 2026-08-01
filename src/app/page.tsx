@@ -41,26 +41,26 @@ const experience = [
 
 const projects = [
   {
+    name: "git-to.dev",
+    path: "~/src/git-to.dev",
+    href: "https://git-to.dev",
+    description:
+      "Fuzzy URL shortener for GitHub repos. Type git-to.dev/oai/cx and it resolves to github.com/openai/codex — no URL shortener needed.",
+    stack: ["Next.js", "GitHub API", "Fuzzy Search"],
+    className: "project-card--featured",
+    index: "01",
+    year: "2026",
+  },
+  {
     name: "ksailnet",
     path: "~/src/ksailnet",
     href: "https://github.com/maazghani/ksailnet",
     description:
       "Inner-loop cloud-native development with a K3s dev container, automated deployments, and a Tailscale tailnet.",
     stack: ["K3s", "Dev Containers", "Tailscale"],
-    className: "project-card--featured",
-    index: "01",
-    year: "2023",
-  },
-  {
-    name: "PDFQuery",
-    path: "~/src/pdfquery",
-    href: "https://github.com/maazghani/pdfquery",
-    description:
-      "A command-line tool that builds vector databases from PDFs for intelligent GPT-powered documentation search.",
-    stack: ["Python", "RAG"],
     className: "",
     index: "02",
-    year: "2025",
+    year: "2023",
   },
   {
     name: "Thinscale",
@@ -73,9 +73,28 @@ const projects = [
     index: "03",
     year: "2017",
   },
+  {
+    name: "PDFQuery",
+    path: "~/src/pdfquery",
+    href: "https://github.com/maazghani/pdfquery",
+    description:
+      "A command-line tool that builds vector databases from PDFs for intelligent GPT-powered documentation search.",
+    stack: ["Python", "RAG"],
+    className: "",
+    index: "04",
+    year: "2025",
+  },
 ];
 
 const articles = [
+  {
+    date: "2026.08.01",
+    title: "Introducing git-to.dev: search github via shortened URLs",
+    description:
+      "A fuzzy GitHub URL shortener: type git-to.dev/oai/cx and land on github.com/openai/codex. Resolves owner/repo pairs by scoring exact, prefix, and subsequence matches — no shortener service required.",
+    href: "https://blog.maaz.sh/blog/04-git-to-dev",
+    type: "3 min read",
+  },
   {
     date: "2025.07.27",
     title: "Interacting with Kubernetes Clusters from Copilot using an MCP Server",
