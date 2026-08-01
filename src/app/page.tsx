@@ -78,8 +78,8 @@ const projects = [
     path: "~/src/git-to.dev",
     href: "https://git-to.dev",
     description:
-      "Instantly turn any GitHub repository into a browsable, shareable developer site — no config needed.",
-    stack: ["GitHub", "Developer Tools", "Open Source"],
+      "Fuzzy URL shortener for GitHub repos. Type git-to.dev/oai/cx and it resolves to github.com/openai/codex — no URL shortener needed.",
+    stack: ["Next.js", "GitHub API", "Fuzzy Search"],
     className: "",
     index: "04",
     year: "2026",
@@ -89,11 +89,11 @@ const projects = [
 const articles = [
   {
     date: "2026.08.01",
-    title: "git-to.dev: Turn any GitHub Repo into a Developer Site",
+    title: "Introducing git-to.dev: search github via shortened URLs",
     description:
-      "How I built git-to.dev — a tool that instantly transforms any public GitHub repository into a browsable, shareable dev site with zero config.",
+      "A fuzzy GitHub URL shortener: type git-to.dev/oai/cx and land on github.com/openai/codex. Resolves owner/repo pairs by scoring exact, prefix, and subsequence matches — no shortener service required.",
     href: "https://blog.maaz.sh/blog/04-git-to-dev",
-    type: "5 min read",
+    type: "3 min read",
   },
   {
     date: "2025.07.27",
