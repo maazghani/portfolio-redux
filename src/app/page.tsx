@@ -52,15 +52,15 @@ const projects = [
     year: "2023",
   },
   {
-    name: "PDFQuery",
-    path: "~/src/pdfquery",
-    href: "https://github.com/maazghani/pdfquery",
+    name: "git-to.dev",
+    path: "~/src/git-to.dev",
+    href: "https://git-to.dev",
     description:
-      "A command-line tool that builds vector databases from PDFs for intelligent GPT-powered documentation search.",
-    stack: ["Python", "RAG"],
+      "Fuzzy URL shortener for GitHub repos. Type git-to.dev/oai/cx and it resolves to github.com/openai/codex — no URL shortener needed.",
+    stack: ["Next.js", "GitHub API", "Fuzzy Search"],
     className: "",
     index: "02",
-    year: "2025",
+    year: "2026",
   },
   {
     name: "Thinscale",
@@ -74,15 +74,15 @@ const projects = [
     year: "2017",
   },
   {
-    name: "git-to.dev",
-    path: "~/src/git-to.dev",
-    href: "https://git-to.dev",
+    name: "PDFQuery",
+    path: "~/src/pdfquery",
+    href: "https://github.com/maazghani/pdfquery",
     description:
-      "Fuzzy URL shortener for GitHub repos. Type git-to.dev/oai/cx and it resolves to github.com/openai/codex — no URL shortener needed.",
-    stack: ["Next.js", "GitHub API", "Fuzzy Search"],
+      "A command-line tool that builds vector databases from PDFs for intelligent GPT-powered documentation search.",
+    stack: ["Python", "RAG"],
     className: "",
     index: "04",
-    year: "2026",
+    year: "2025",
   },
 ];
 
